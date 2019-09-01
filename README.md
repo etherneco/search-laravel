@@ -12,7 +12,10 @@ Run composer
 
 
 Create database structure from ./db/dump_db.sql
+
+
 Run webserwer
+
 #php artisan serve  --host=192.168.56.101
 Laravel development server started: <http://192.168.56.101:8000>
 
