@@ -1,29 +1,73 @@
+# Search (Laravel)
 
-## Search example Laravel
+## Overview
+This repository explores backend search mechanisms implemented within a Laravel-based application.
 
-Download 
+The project focuses on **search logic, query design and data access patterns**, using Laravel as an execution context rather than the subject of the project itself.
 
-#git clone https://github.com/etherneco/personparse.git
+---
 
+## Problem Context
+Search functionality is often underestimated and implemented as a simple filter over datasets.
 
-Run composer
+In real-world systems, search requirements typically involve:
+- dynamic query composition
+- performance constraints
+- relevance trade-offs
+- evolving data models
 
-#composer install
+This repository was created to experiment with and validate different backend search approaches under realistic conditions.
 
+---
 
-Create database structure from ./db/dump_db.sql
+## Scope
+The project investigates:
+- query construction strategies
+- filtering and sorting logic
+- pagination and result shaping
+- trade-offs between flexibility and performance
 
+It does not aim to be a full-text search engine or a replacement for specialised tools.
 
-Run webserwer
+---
 
-#php artisan serve  --host=192.168.56.101
-Laravel development server started: <http://192.168.56.101:8000>
+## Design Approach
+- Backend-first perspective
+- Explicit query logic
+- Avoidance of magic abstractions
+- Emphasis on readability and debuggability
 
-Produce a simple search facility with pagination with the data sets provided.
-The search is to do allow the matching of the following:
-1.	location with exact and partial naming matches;
-2.	near the beach;
-3.	accepts pets;
-4.	sleeps (minimum);
-5.	beds (minimum);
-6.	availability.
+Laravel is used for its ecosystem and conventions, not as the focus of the solution.
+
+---
+
+## Use Cases
+- Internal search features in business applications
+- Admin and reporting interfaces
+- Data-heavy backend systems
+- Prototyping search logic before external indexing solutions
+
+---
+
+## Tech Stack
+- PHP
+- Laravel framework
+- Relational database queries
+
+---
+
+## Status
+- Functional prototype
+- Exploratory implementation
+- Used to evaluate search-related design decisions
+
+---
+
+## Why This Project Exists
+This repository demonstrates:
+- practical backend search design
+- understanding of query complexity
+- awareness of performance and maintainability trade-offs
+- experience with real-world application constraints
+
+It reflects backend engineering concerns rather than framework experimentation.
